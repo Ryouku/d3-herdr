@@ -1,0 +1,14 @@
+# Only our own layout and mods are versioned here. Everything else in this
+# folder is Herdr's, bettr's (~/.local/share/bettr) or state the app writes.
+/*
+!/.gitignore
+!/layouts/
+/layouts/*
+!/layouts/my-bettr.json
+!/mods/
+/mods/*
+!/mods/my-usage/
+!/mods/resource-monitor/
+# Written into mod folders by Herdr.
+jsconfig.json
+*.d.ts
