@@ -524,7 +524,14 @@ export default class Spaces extends View {
     }
     if (changed) setShared("space.colors", kept);
     this.sp = sp; this.colors = kept;
-    const list = this.grouped(t);
+    // bettr has a "+" only on machine headers, which show once a second machine is known: with
+    // one machine there was no way to add a space here. This row is always the list's last.
+    const add = h_flex().id("space-new").h(28).mt(SPACE_GAP).flex_none().px(8).gap(7).items_center().rounded(7)
+      .cursor_pointer().text_size(12).text_color(t.dim).hover(s => s.bg(t.hover).text_color(t.foreground))
+      .tooltip("New space (cmd-n)")
+      .on_click(() => run("space.new"))
+      .child(svg("mods/workspace-chrome/plus.svg").size(12)).child("New space");
+    const list = [...this.grouped(t), add];
     return v_flex().size_full().min_h(0).bg(t.chrome).text_size(13)
       .child(v_flex().id("spaces-list").flex_1().min_h(0).px(8).pb(14).overflow_y_scrollbar().mode("always")
         .on_mouse_up("left", (_e, cx) => { this.pressed = null; cx.notify(); })
