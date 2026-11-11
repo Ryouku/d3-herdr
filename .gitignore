@@ -7,6 +7,8 @@
 !/layouts/my-bettr.json
 !/mods/
 /mods/*
+!/mods/bell/
+!/keys.json
 !/mods/my-spaces/
 !/mods/my-usage/
 !/mods/resource-monitor/
