@@ -7,6 +7,7 @@
 !/layouts/my-bettr.json
 !/mods/
 /mods/*
+!/mods/my-spaces/
 !/mods/my-usage/
 !/mods/resource-monitor/
 # Written into mod folders by Herdr.
