@@ -1,0 +1,5 @@
+Source: https://github.com/wobsoriano/herdr-sim
+Revision: 82b51e8c1e869d497dcd38c7b68f60f879e0aa96
+Integrated with Bettr's native mod-panel registration; current layout and tab-bar code retained, keys unchanged.
+Local compatibility adjustment: use installed Node v24.22.1 without interactive shell startup; iTerm integration otherwise prefixes the helper JSON with OSC sequences.
+Local panel compatibility: layoutFramed copies use the panel frame slot and stop streaming when Bettr's generated mod-panel-herdr-sim node is hidden. Original separate preview split removed to avoid duplicate streaming.

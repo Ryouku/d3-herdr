@@ -365,6 +365,26 @@
                         "color": "border"
                       },
                       "radius": 10
+                    },
+                    {
+                      "id": "mod-panel-herdr-sim",
+                      "type": "block",
+                      "content": {
+                        "mod": "herdr-sim",
+                        "props": {
+                          "layoutFramed": true
+                        }
+                      },
+                      "size": {
+                        "weight": 1
+                      },
+                      "hidden": true,
+                      "background": "background",
+                      "border": {
+                        "width": 1,
+                        "color": "border"
+                      },
+                      "radius": 10
                     }
                   ],
                   "gap": 8

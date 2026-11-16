@@ -12,6 +12,10 @@
 !/mods/my-spaces/
 !/mods/my-usage/
 !/mods/resource-monitor/
+!/mods/herdr-sim/
+!/mods/herdr-sim-screen/
+# Simulator frames the herdr-sim mod writes at runtime.
+/mods/herdr-sim-screen/*.jpg
 # Written into mod folders by Herdr.
 jsconfig.json
 *.d.ts
