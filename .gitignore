@@ -2,6 +2,7 @@
 # folder is Herdr's, bettr's (~/.local/share/bettr) or state the app writes.
 /*
 !/.gitignore
+!/README.md
 !/layouts/
 /layouts/*
 !/layouts/my-bettr.json
