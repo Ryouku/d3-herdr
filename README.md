@@ -78,6 +78,14 @@ Node (see below).
    Check: the window shows the spaces sidebar with agent rows, the usage bars
    and the Resource panel.
 
+   The usage bars show one card per agent that has reported. On a fresh
+   install the Codex card is usually missing: the panel asks for fresh usage
+   by itself only when no card exists yet, so the Claude card stops it, and
+   Codex reports only when a Codex session started after step 2 uses a tool.
+   Click the usage bars to ask every agent now, or run
+   `python3 -I ~/.config/herdr-app/mods/bettr-usage/report_usage.py --now codex`.
+   Cursor is not supported.
+
 5. **Simulator panel (optional).** `mods/herdr-sim/serve-sim.js` puts
    `~/.nvm/versions/node/v24.22.1/bin` first on its `PATH`. Install that Node
    version with nvm, or edit the `SERVE_SIM` line to the machine's Node. iOS
