@@ -13,7 +13,8 @@ steps in order and stop at the first check that fails; report its output.
 |---|---|
 | `layouts/my-bettr.json` | The layout. Built on bettr's panels plus our mods. |
 | `keys.json` | Key bindings. |
-| `mods/my-spaces` | Spaces sidebar rework: agent rows with program icon and context use, a New space row. |
+| `mods/better-sidebar` | The sidebar: spaces with Git branch and PR status, nested worktrees, Spaces/Agents tabs. `munza/herdr-mods` (Apache-2.0) at a pinned commit, with our context-use % on agent rows; see its `INSTALLATION.txt`. Needs `gh` logged in for PR status. |
+| `mods/my-spaces` | The previous sidebar, kept for rollback: set the layout's `spaces` block back to `my-spaces`. |
 | `mods/my-usage` | Usage bars. |
 | `mods/resource-monitor` | Resource panel: CPU, GPU, memory, disk, listening ports. |
 | `mods/bell` | Waiting bell, status counts and jump keys in the top bar. |

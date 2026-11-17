@@ -1,0 +1,16 @@
+better-sidebar — from https://github.com/munza/herdr-mods (Apache-2.0, see LICENSE and NOTICE)
+Source: better-sidebar/mods/better-sidebar at commit 8606260 (version 3.3.0 in mod.json).
+
+Local changes (d3-herdr), all in views/agents.js and marked "d3-herdr":
+  - contextShare(): reads the `bettr.context` terminal label bettr-reporter publishes,
+    ported unchanged from mods/my-spaces/main.js.
+  - readView(): keeps this render's terminals by address (this.terms).
+  - agentRow(): shows context used as a percentage before the run time —
+    dim, yellow from 60%, red from 80%.
+
+Updating: do NOT run upstream sync.sh straight into this folder (rsync --delete wipes the
+patch and this file). Copy the new mods/better-sidebar/ over, put LICENSE, NOTICE and this
+file back, re-apply the three d3-herdr hunks, then `herdr-app check` this folder.
+
+Used by layouts/my-bettr.json, block "spaces": {"mod":"better-sidebar","props":{"view":"lists"}}.
+Rollback: set that block back to {"mod":"my-spaces"} (my-spaces is kept for this).

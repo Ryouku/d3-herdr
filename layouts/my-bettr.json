@@ -25,7 +25,10 @@
           "id": "spaces",
           "type": "block",
           "content": {
-            "mod": "my-spaces"
+            "mod": "better-sidebar",
+            "props": {
+              "view": "lists"
+            }
           },
           "size": {
             "weight": 1
